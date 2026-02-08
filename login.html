@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login with Discord</title>
+    <title>Login - Discord Bot Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Login with Discord</h1>
-    <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=identify%20email">
-        <button>Login with Discord</button>
-    </a>
+    <main class="login-page">
+        <section class="login-container">
+            <img src="assets/discord-logo.png" alt="Discord Logo" class="login-logo">
+            <h1>Login mit Discord</h1>
+            <p>Verbinde deinen Discord Account, um den Bot zu verwalten.</p>
+            <button id="login-btn" class="btn-primary">Mit Discord einloggen</button>
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
 </body>
 </html>
